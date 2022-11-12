@@ -26,7 +26,7 @@ func main(){
 }
 
 */
-
+/*
 package main
 
 import "fmt"
@@ -40,4 +40,22 @@ func main(){
 		fmt.Scan(&b)
 	}
 	fmt.Println(i)
+}
+*/
+
+package main
+import "fmt"
+
+func main(){
+    var n, div, mod, a, j1, j2 int
+    
+    fmt.Scan(&n)
+    for i:=0; i<=n, i++ {
+        fmt.Scan(&a)
+        div = a/3
+        mod = a%3
+        j1 += div
+        j2 += mod
+    }
+    fmt.Println(j1, j2)
 }
