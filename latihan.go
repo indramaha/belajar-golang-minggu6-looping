@@ -114,13 +114,14 @@ func main() {
 */
 
 // tugas4
+/*
 package main
 
 import "fmt"
 
 func main(){
     var n, m, hasil, b1, b2 int
-    
+
     fmt.Scanln(&n)
     for i:=1; i<=n; i++ {
         fmt.Scanln(&m)
@@ -129,4 +130,21 @@ func main(){
         hasil += b1 +b2
     }
     fmt.Println(hasil)
+}
+*/
+
+// soal penjumlahan terus menerus sampai diatas 100
+package main
+
+import "fmt"
+
+func main(){
+    var x, hasil, i int
+
+    hasil = 0
+    for i=0; hasil <= 100; i++ {
+        fmt.Scan(&x)
+        hasil += x
+    }
+    fmt.Println(hasil, i)
 }
