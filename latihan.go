@@ -35,7 +35,7 @@ func main(){
 	var a, b, i int
 	i=1
 	fmt.Scan(&a, &b)
-	for !((a==b) || ((a/10)==b) || ((a%10)==b)) {	
+	for !((a==b) || ((a/10)==b) || ((a%10)==b)) {
 		i++
 		fmt.Scan(&b)
 	}
@@ -44,13 +44,14 @@ func main(){
 */
 
 package main
+
 import "fmt"
 
 func main(){
-    var n, div, mod, a, j1, j2 int
+    var i, n, div, mod, a, j1, j2 int
     
     fmt.Scan(&n)
-    for i:=0; i<=n, i++ {
+    for i = 0; i < n; i++ {
         fmt.Scan(&a)
         div = a/3
         mod = a%3
