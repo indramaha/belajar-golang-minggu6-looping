@@ -134,6 +134,7 @@ func main(){
 */
 
 // soal penjumlahan terus menerus sampai diatas 100
+/*
 package main
 
 import "fmt"
@@ -147,4 +148,61 @@ func main(){
         hasil += x
     }
     fmt.Println(hasil, i)
+}
+*/
+
+// soal input persegi
+/*
+package main
+
+import "fmt"
+
+func main(){
+    var n, p, l, kll int
+
+    fmt.Scan(&n)
+    for i:=1; i <= n; i++ {
+        fmt.Scan(&p)
+        l = p *p
+        kll = 4*p
+        fmt.Println(l, kll)
+    }
+
+}
+*/
+
+// jumlahkan deret 1 3 5 sampai 99 DENGAN FOR
+/*
+package main
+
+import "fmt"
+
+func main(){
+    var jumlah int
+    jumlah = 0
+    i:= 1
+    for i<100 {
+        jumlah += i
+        i += 2
+    }
+    fmt.Println(jumlah)
+}
+*/
+
+// soal 1/1, 1/2, ..., 1/n
+
+package main
+
+import "fmt"
+
+func main(){
+    var input,hasil float64
+
+    hasil = 1
+    fmt.Scan(&input)
+    for input != 0 {
+        hasil *= (1/input)
+        fmt.Scan(&input)
+    }
+    fmt.Printf("%.5f", hasil)
 }
